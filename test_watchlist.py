@@ -1,5 +1,7 @@
 import unittest
-from app import app, db, Movie, User, forge, initdb
+from watchlist import app, db
+from watchlist.models import Movie, User
+from watchlist.commands import forge, initdb
 
 class WatchlistTestCase(unittest.TestCase):
 
@@ -244,6 +246,12 @@ class WatchlistTestCase(unittest.TestCase):
     def test_initdb_command(self):
         result = self.runner.invoke(initdb)
         self.assertIn('Initialized database.', result.output)
+
+    # 测试初始化数据库
+    def test_initdb_command_with_drop(self):
+        result = self.runner.invoke(initdb, args=["--drop"])
+        self.assertIn('Initialized database.', result.output)
+        self.assertIn('drop all database.', result.output)
 
     # 测试生成管理员账户
     def test_admin_command(self):
