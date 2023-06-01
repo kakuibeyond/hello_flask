@@ -27,11 +27,11 @@ def forge():
     # 全局的两个变量移动到这个函数内
     name = 'CW'
     movies = [
-        {'title': 'My Neighbor Totoro', 'year': '1988'},
-        {'title': 'Dead Poets Society', 'year': '1989'},
-        {'title': 'A Perfect World', 'year': '1993'},
-        {'title': 'Leon', 'year': '1994'},
-        {'title': 'Mahjong', 'year': '1996'},
+        {'title': '盟约 The Covenant', 'year': '2023'},
+        {'title': '母亲本色 / 慈母杀心(台)', 'year': '2023'},
+        {'title': '肖申克的救赎  / The Shawshank Redemption  / 月黑高飞(港) / 刺激1995(台)', 'year': '1994'},
+        {'title': '阿甘正传  / Forrest Gump  / 福雷斯特·冈普', 'year': '1994'},
+        {'title': '泰坦尼克号  / Titanic  / 铁达尼号(港 / 台)', 'year': '1997'},
         {'title': 'Swallowtail Butterfly', 'year': '1996'},
         {'title': 'King of Comedy', 'year': '1999'},
         {'title': 'Devils on the Doorstep', 'year': '1999'},

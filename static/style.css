@@ -1,7 +1,7 @@
 /* 页面整体 */
 body {
     margin: auto;
-    max-width: 580px;
+    max-width: 600px;
     font-size: 14px;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -75,12 +75,12 @@ nav li a:hover {
     float: right;
 }
 
-.imdb {
+.douban {
     font-size: 12px;
     font-weight: bold;
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background: #F5C518;
+    background: #00b51d;
     border-radius: 5px;
     padding: 3px 5px;
 }
